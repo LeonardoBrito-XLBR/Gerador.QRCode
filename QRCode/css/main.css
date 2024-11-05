@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    margin: 0; /* remove a margens para 0 */
+    overflow: hidden; /* Escode o que vazar da div  - TIRA A BARRA DE ROLAGEM*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+
+}
+
+/* video{
+    position: absolute;
+    z-index: -1;
+    width: 100vh;
+    height: 100vh;
+} */
+
+
+#fundoVideo{
+    min-width: 100%; /* LARGURA MINIMA*/
+    height: auto; /* altura automatica */
+    z-index: -1; /* DEIXA O VIDEO ATRÁS DE TUDO */
+    position: absolute; /* DEIXAR O ITEM NA POSIÇÃO NO FUNDO (PRESO) */
+    top: 0;
+    left: 0;
+    object-fit: cover; /* DEIXA QUE O VIDEO COM A MESMA LARGURA*/
+    opacity: 30%;
+
+}
+
+.central {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.658);
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+.central div input{
+    height: 30px;
+    width: 65%;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.central div button {
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+#qrcode {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
